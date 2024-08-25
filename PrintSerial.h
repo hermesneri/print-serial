@@ -14,19 +14,19 @@ class PrintSerial {
 public:
     PrintSerial();
 
-    bool begin(int baudrate, uint8_t print_level);
+    static bool begin(int baudrate, uint8_t print_level);
 
     // Métodos de impressão com diferentes cores
-    void done(const char* format, ...);
-    void log(const char* format, ...);
-    void logln(const char* format, ...);
-    void warning(const char* format, ...);
-    void error(const char* format, ...);
-    void infos(const char* format, ...);
-    void backg(const char* format, ...);
+    static void done(const char* format, ...);
+    static void log(const char* format, ...);
+    static void logln(const char* format, ...);
+    static void warning(const char* format, ...);
+    static void error(const char* format, ...);
+    static void infos(const char* format, ...);
+    static void backg(const char* format, ...);
 
 private:
-    void setColor(const char *colorCode);
+    static void setColor(const char *colorCode);
 };
 
 #endif
