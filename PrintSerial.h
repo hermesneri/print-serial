@@ -31,8 +31,6 @@ private:
 
 #endif
 
-
-
 /*
 >> Text Colors:
 Preto: \033[30m
