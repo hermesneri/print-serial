@@ -2,8 +2,8 @@
  * @file PrintSerial.cpp
  * @author github.com/hermesneri
  * @brief
- * @version 1.2
- * @date 2024
+ * @version 1.3
+ * @date July 2024
  */
 #include "PrintSerial.h"
 #define SERIAL_COLOR // turn-on or turn-off the Color print
@@ -111,7 +111,7 @@ void PrintSerial::logln(const char *format, ...)
     }
 }
 
-void PrintSerial::warning(const char *format, ...)
+void PrintSerial::warn(const char *format, ...)
 {
     if (PRINT_LEVEL == 1 || PRINT_LEVEL == 4 || PRINT_LEVEL == 6)
     {

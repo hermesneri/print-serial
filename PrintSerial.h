@@ -2,8 +2,8 @@
  * @file PrintSerial.h
  * @author github.com/hermesneri
  * @brief 
- * @version 1.2
- * @date 2024
+ * @version 1.3
+ * @date July 2024
  */
 #ifndef PrintSerial_h
 #define PrintSerial_h
@@ -20,7 +20,7 @@ public:
     static void done(const char* format, ...);
     static void log(const char* format, ...);
     static void logln(const char* format, ...);
-    static void warning(const char* format, ...);
+    static void warn(const char* format, ...);
     static void error(const char* format, ...);
     static void infos(const char* format, ...);
     static void backg(const char* format, ...);

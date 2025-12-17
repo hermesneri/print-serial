@@ -3,10 +3,8 @@
  * @file example.ino
  * @author github.com/hermesneri
  * @brief 
- * @version 1.1
+ * @version 1.3
  * @date July 2024
- * 
- * @copyright Copyright (c) 2024
  * 
  */
 #include "PrintSerial.h"
@@ -28,7 +26,7 @@ void setup() {
     SerialPrint.logln("Configuration in progress...");
 
     // WARNING message
-    SerialPrint.warning("This is a warning. Check your settings.");
+    SerialPrint.warn("This is a warning. Check your settings.");
 
     // ERROR message
     SerialPrint.error("Failed to connect to the server.");
